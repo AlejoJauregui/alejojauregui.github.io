@@ -1,4 +1,6 @@
 @font-face { font-family: "Tektur"; src: url("../fonts/tektur-var.woff2") format("woff2"); font-weight: 400 900; font-display: swap; }
+/* Kremlin (Vic Fieger, dafont "100% Free"): the lettering of Alejo's logo. Its lowercase "e" is the "3" in JAUR3GUI. */
+@font-face { font-family: "Kremlin"; src: url("../fonts/kremlin.ttf") format("truetype"); font-display: swap; }
 @font-face { font-family: "Inter"; src: url("../fonts/inter-var.woff2") format("woff2"); font-weight: 300 900; font-display: swap; }
 
 :root {
@@ -34,7 +36,9 @@ h1, h2, h3, h4 { font-family: "Tektur", sans-serif; line-height: 1.15; margin: 0
 /* nav */
 .nav { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 20px; padding: 12px max(16px, calc((100% - var(--max)) / 2));
   background: rgba(11, 4, 24, .78); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 900 20px "Tektur"; letter-spacing: 3px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand .kremlin { font: 400 24px/1 "Kremlin", "Tektur", sans-serif; letter-spacing: 2px; color: #fff;
+  text-shadow: 2px 2px 0 #101014, -1px -1px 0 #101014, 0 0 14px rgba(138, 43, 226, .6); white-space: nowrap; }
 .brand img { width: 40px; height: auto; }
 .nav nav { display: flex; gap: 18px; margin-left: auto; flex-wrap: wrap; }
 .nav nav a { text-decoration: none; color: var(--muted); font-weight: 600; font-size: 15px; }
@@ -150,6 +154,8 @@ h1, h2, h3, h4 { font-family: "Tektur", sans-serif; line-height: 1.15; margin: 0
 .yorick .y-open { opacity: 0; }
 .yorick:hover .y-closed { opacity: 0; } .yorick:hover .y-open { opacity: 1; }
 .yorick:hover img { transform: translateY(-6px) rotate(-6deg); }
+.yorick.jump img { animation: yjump .5s ease-out; }
+@keyframes yjump { 40% { transform: translateY(-22px) rotate(-10deg); } }
 
 /* reveal on scroll */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }

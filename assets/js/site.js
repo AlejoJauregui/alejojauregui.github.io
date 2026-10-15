@@ -91,6 +91,16 @@
     if (navigator.clipboard) navigator.clipboard.writeText(email()).then(done, done); else done();
   });
 
+  // ---------------------------------------------------------------- Yorick: back to the very top (the header is sticky, so an anchor isn't enough)
+  var yor = document.getElementById("to-top");
+  yor.addEventListener("click", function (e) {
+    e.preventDefault();
+    yor.classList.remove("jump"); void yor.offsetWidth; yor.classList.add("jump");
+    window.scrollTo({ top: 0, behavior: reduce0() ? "auto" : "smooth" });
+    history.replaceState(null, "", location.pathname + location.search);
+  });
+  function reduce0() { return window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
+
   // ---------------------------------------------------------------- hero aura (blue / purple / red, like the videos)
   var cv = document.getElementById("aura"), ctx = cv.getContext("2d");
   var COLS = ["43,108,255", "138,43,226", "255,46,59"];
