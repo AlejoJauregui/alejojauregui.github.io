@@ -23,4 +23,4 @@ Only verifiable facts go here (LinkedIn profile and credential IDs).
 
 ## Credits
 
-Logo and characters © Alejo Jáuregui. Fonts: [Tektur](https://fonts.google.com/specimen/Tektur) and [Inter](https://fonts.google.com/specimen/Inter) (SIL Open Font License).
+Logo and characters © Alejo Jáuregui. Fonts: [Tektur](https://fonts.google.com/specimen/Tektur) and [Inter](https://fonts.google.com/specimen/Inter) (SIL Open Font License). Icons from [Iconify](https://iconify.design): Simple Icons (CC0) and Material Design Icons (Apache 2.0), inlined in the HTML so the site makes no third-party requests.

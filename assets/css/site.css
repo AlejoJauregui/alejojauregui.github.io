@@ -54,7 +54,7 @@ h1, h2, h3, h4 { font-family: "Tektur", sans-serif; line-height: 1.15; margin: 0
 .roles { font: 700 18px "Tektur"; color: var(--gold); margin: 14px 0; letter-spacing: 1px; }
 .lead { color: var(--text); font-size: 19px; max-width: 34em; }
 .ctas, .contact-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-.btn { display: inline-block; font: 800 15px "Tektur"; letter-spacing: 1px; text-decoration: none; color: var(--text); background: transparent;
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 800 15px "Tektur"; letter-spacing: 1px; text-decoration: none; color: var(--text); background: transparent;
   border: 2px solid var(--line); border-radius: 12px; padding: 12px 20px; cursor: pointer; transition: transform .15s, border-color .15s, background .15s; }
 .btn:hover { transform: translateY(-2px); border-color: var(--pink); }
 .btn.primary { background: var(--pink); border-color: var(--pink); color: #12031f; }
@@ -128,6 +128,17 @@ h1, h2, h3, h4 { font-family: "Tektur", sans-serif; line-height: 1.15; margin: 0
 .channel p { margin: 0; color: var(--muted); }
 .channel[href]:hover { border-color: var(--pink); transform: translateY(-2px); }
 .channel:not([href]) h3::after { content: attr(data-soon); margin-left: 10px; font: 700 11px "Tektur"; letter-spacing: 2px; color: var(--pink); vertical-align: middle; }
+
+/* icons + social */
+.ico { width: 20px; height: 20px; flex: none; }
+.channel h3 .ico { width: 22px; height: 22px; vertical-align: -4px; margin-right: 8px; color: var(--pink); }
+.social { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 16px; }
+.soc { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--text); text-decoration: none; font: 700 14px "Tektur"; letter-spacing: .5px; transition: color .15s, border-color .15s, transform .15s; }
+.soc:hover { transform: translateY(-2px); }
+.soc.in:hover { color: #4d9bf0; border-color: #0a66c2; } .soc.gh:hover { color: #fff; border-color: #fff; }
+.soc.yt:hover { color: #ff3b47; border-color: #ff0033; } .soc.tw:hover { color: #a970ff; border-color: #9146ff; }
+.soc.ig:hover { color: #ff5c9a; border-color: #e1306c; } .soc.x:hover { color: #fff; border-color: #fff; }
 
 /* contact + footer */
 .contact { text-align: center; }
