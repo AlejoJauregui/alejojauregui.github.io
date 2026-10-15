@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 · Alas, poor Yorick!</title>
+  <link rel="icon" href="/assets/img/alejo-bust-hd.png" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <style>
+    .lost { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 24px; }
+    .lost img { width: 180px; animation: bob 1.6s ease-in-out infinite; }
+    .lost blockquote { font: italic 600 22px/1.4 "Inter", sans-serif; color: var(--muted); margin: 0; max-width: 30em; }
+    .lost h1 { font-size: clamp(56px, 12vw, 120px); color: var(--gold); text-shadow: 0 6px 0 var(--red); }
+    @keyframes bob { 50% { transform: translateY(-10px) rotate(-4deg); } }
+    @media (prefers-reduced-motion: reduce) { .lost img { animation: none; } }
+  </style>
+</head>
+<body>
+  <main class="lost">
+    <img src="/assets/img/yorick-hd-open.png" alt="Yorick, la calavera bufón" />
+    <h1>404</h1>
+    <blockquote>“Alas, poor Yorick!”<br />Esta página no existe… o se perdió en otra generación. · This page doesn't exist.</blockquote>
+    <a class="btn primary" href="/">Volver al Nexus · Back to the Nexus</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejo Jáuregui · Enterprise Architect & Game Designer</title>
+  <meta name="description" content="Alejandro (Alejo) Jáuregui: Arquitecto Empresarial en banca, Máster en Diseño y Desarrollo de Videojuegos y creador de Gamer's Cuts." />
+  <meta property="og:title" content="Alejo Jáuregui · Enterprise Architect & Game Designer" />
+  <meta property="og:description" content="Arquitecturas para la banca, mundos de juego y Gamer's Cuts." />
+  <meta property="og:image" content="https://alejojauregui.github.io/assets/img/alejo-logo.png" />
+  <meta name="theme-color" content="#0b0418" />
+  <link rel="icon" href="assets/img/alejo-bust-hd.png" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#hero" aria-label="Inicio"><img src="assets/img/alejo-bust-hd.png" alt="" width="40" height="38" /><span>ALEJO</span></a>
+    <nav aria-label="Secciones">
+      <a href="#about" data-i18n="nav.about">Sobre mí</a>
+      <a href="#quests" data-i18n="nav.quests">Quests</a>
+      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="#talents" data-i18n="nav.talents">Talentos</a>
+      <a href="#content" data-i18n="nav.content">Contenido</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <button class="lang" id="lang" type="button" aria-label="Change language / Cambiar idioma">EN</button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-art">
+        <canvas id="aura" aria-hidden="true"></canvas>
+        <img class="logo" src="assets/img/alejo-logo.png" alt="Logo de Alejo Jáuregui: ilustración tipo sticker con audífonos, lentes y capa morada" width="800" height="800" />
+      </div>
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero.kicker">Bienvenido al Nexus</p>
+        <h1>Alejandro <span class="accent">“Alejo”</span> Jáuregui</h1>
+        <p class="roles"><span data-i18n="hero.r1">Arquitecto Empresarial</span> · <span>Game Designer</span> · <span data-i18n="hero.r3">Creador</span></p>
+        <p class="lead" data-i18n="hero.lead">Ingeniero de Sistemas con más de 10 años en tecnología. De día diseño arquitecturas para la banca; el resto del tiempo diseño mundos, juegos y videos.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#quests" data-i18n="hero.cta1">Ver la Quest Log</a>
+          <a class="btn" href="#contact" data-i18n="hero.cta2">Invocar a Alejo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="title" data-i18n="about.title">Sobre mí</h2>
+      <div class="about">
+        <div class="about-text">
+          <p data-i18n="about.p1">Soy Ingeniero de Sistemas (Fundación Universitaria Konrad Lorenz) y Máster en Diseño y Desarrollo de Videojuegos (VIU – Universidad Internacional de Valencia). Vivo en Bogotá, Colombia.</p>
+          <p data-i18n="about.p2">Trabajo como Arquitecto Empresarial en Banco Davivienda, en el frente de innovación: diseño arquitecturas AS-IS y TO-BE, defino lineamientos y estándares, evalúo proveedores y startups, y diseño soluciones cloud en GCP, AWS y Azure.</p>
+          <p data-i18n="about.p3">Mi otra mitad es el game design: prototipos en Unity, narrativa interactiva y Gamer's Cuts, mi sección sobre historia y diseño de videojuegos.</p>
+        </div>
+        <pre class="code" aria-label="Character sheet"><code><span class="k">class</span> <span class="c">AlejoProfile</span> {
+  <span class="f">constructor</span>() {
+    <span class="t">this</span>.name  = <span class="s">"Alejandro Jáuregui"</span>;
+    <span class="t">this</span>.class = [<span class="s">"Enterprise Architect"</span>, <span class="s">"Game Designer"</span>];
+    <span class="t">this</span>.base  = <span class="s">"Bogotá, CO"</span>;
+    <span class="t">this</span>.guild = <span class="s">"Banco Davivienda"</span>;
+    <span class="t">this</span>.stats = { INT: <span class="s">"Architecture"</span>, WIS: <span class="s">"Innovation"</span>, CHA: <span class="s">"Storytelling"</span> };
+  }
+}</code></pre>
+      </div>
+      <div class="facets">
+        <article class="facet arch"><h3>The Architect</h3><p data-i18n="facet.arch">Arquitectura empresarial y de soluciones, gobierno de TI y nube (GCP, AWS, Azure) en banca y seguros.</p></article>
+        <article class="facet inno"><h3>The Innovator</h3><p data-i18n="facet.inno">Innovación y evaluación de startups, transformación digital y desarrollo guiado por especificaciones con IA.</p></article>
+        <article class="facet crea"><h3>The Creator</h3><p data-i18n="facet.crea">Diseño y desarrollo de videojuegos en Unity, narrativa interactiva y video para YouTube.</p></article>
+      </div>
+    </section>
+
+    <!-- QUEST LOG -->
+    <section class="section" id="quests">
+      <h2 class="title" data-i18n="quests.title">Quest Log</h2>
+      <p class="sub" data-i18n="quests.sub">Misiones completadas y roles activos.</p>
+      <ol class="timeline">
+        <li class="quest active">
+          <div class="when">2021 – <span data-i18n="now">hoy</span></div>
+          <div class="body">
+            <h3 data-i18n="q1.role">Arquitecto Empresarial · Innovación</h3>
+            <p class="org">Banco Davivienda <span class="tag on" data-i18n="tag.active">Activa</span></p>
+            <ul>
+              <li data-i18n="q1.a">Diseño de arquitecturas AS-IS y TO-BE alineadas con la arquitectura empresarial del banco.</li>
+              <li data-i18n="q1.b">Lineamientos, políticas y estándares para implementar, modificar o retirar aplicaciones.</li>
+              <li data-i18n="q1.c">Software selection y evaluación tecnológica de startups para el venture capital del Grupo Bolívar.</li>
+              <li data-i18n="q1.d">Arquitecturas cloud en Google Cloud Platform, AWS y Azure.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="quest">
+          <div class="when">2018 – 2021</div>
+          <div class="body">
+            <h3 data-i18n="q2.role">Analista de Proyectos Digitales y Líder de Innovación</h3>
+            <p class="org">HDI Seguros Colombia <span class="tag" data-i18n="tag.done">Completada</span></p>
+            <ul>
+              <li data-i18n="q2.a">Evaluación tecnológica y de negocio de startups del programa de aceleración HDI Startups.</li>
+              <li data-i18n="q2.b">Arquitecturas de aplicaciones para el dominio de innovación de Transformación Digital.</li>
+              <li data-i18n="q2.c">Análisis AS-IS / TO-BE, requerimientos, historias de usuario y procesos de UX para Latinoamérica.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="quest">
+          <div class="when">2018 – 2021</div>
+          <div class="body">
+            <h3 data-i18n="q3.role">Auditor de Sistemas · Sector solidario</h3>
+            <p class="org">Serfiscal S.A. <span class="tag side">Side quest</span></p>
+            <ul><li data-i18n="q3.a">Auditorías de sistemas y asesoría de transformación tecnológica a fondos y cooperativas de empleados.</li></ul>
+          </div>
+        </li>
+        <li class="quest">
+          <div class="when">2019</div>
+          <div class="body">
+            <h3 data-i18n="q4.role">Docente en formación · Unity 3D</h3>
+            <p class="org">Fundación Universitaria Konrad Lorenz <span class="tag side">Side quest</span></p>
+            <ul><li data-i18n="q4.a">Clases y acompañamiento de proyectos en Unity 3D; guía de diseño UX/UI para los proyectos finales.</li></ul>
+          </div>
+        </li>
+        <li class="quest">
+          <div class="when">2015 – 2018</div>
+          <div class="body">
+            <h3 data-i18n="q5.role">Practicante de Arquitectura</h3>
+            <p class="org">Banco Davivienda <span class="tag tut">Tutorial</span></p>
+            <ul><li data-i18n="q5.a">Diseños arquitectónicos técnicos, evaluación de proveedores y mantenimiento de la arquitectura del banco.</li></ul>
+          </div>
+        </li>
+      </ol>
+      <h3 class="subtitle" data-i18n="edu.title">Academia</h3>
+      <div class="edu">
+        <div class="card"><span class="year">2019 – 2022</span><h4 data-i18n="edu.viu">Máster en Diseño y Desarrollo de Videojuegos</h4><p>VIU – Universidad Internacional de Valencia</p></div>
+        <div class="card"><span class="year">2011 – 2015</span><h4 data-i18n="edu.kl">Ingeniería de Sistemas</h4><p>Fundación Universitaria Konrad Lorenz</p></div>
+        <div class="card"><span class="year">2019</span><h4 data-i18n="edu.ar">Realidad Aumentada · Desarrollo de videojuegos</h4><p>Fundación Universitaria Konrad Lorenz</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="title" data-i18n="projects.title">Proyectos</h2>
+      <p class="sub" data-i18n="projects.sub">Lo que estoy construyendo y lo que ya construí.</p>
+      <div class="projects">
+        <article class="project wide">
+          <video controls preload="none" playsinline poster="assets/video/gamers-cuts-intro-poster.jpg" aria-label="Gamer's Cuts intro">
+            <source src="assets/video/gamers-cuts-intro-720p.mp4" type="video/mp4" />
+          </video>
+          <div class="p-body">
+            <h3>Gamer's Cuts · Intro</h3>
+            <p data-i18n="p.gc">Intro de mi sección de YouTube: un viaje por siete generaciones de videojuegos, hecho 100 % con código (HTML, WebGL y GSAP renderizados a video con HyperFrames). Música y efectos de sonido compuestos en código.</p>
+            <p class="stack">HyperFrames · WebGL · GSAP · Python</p>
+            <p class="badges"><span class="badge" data-i18n="badge.2026">2026</span></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="p-body">
+            <h3>The Wizard Journey</h3>
+            <p data-i18n="p.twj">Mi trabajo final del Máster (VIU): la historia de Aaron, un granjero que se convierte en mago para rescatar a su hija. Diseño y desarrollo en Unity.</p>
+            <p class="stack">Unity · C#</p>
+            <p class="badges"><a class="badge link" href="https://github.com/AlejoJauregui/The-Wizard-Journey" data-i18n="badge.github">Ver en GitHub</a></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="p-body">
+            <h3>Life RPG Tracker</h3>
+            <p data-i18n="p.rpg">App de hábitos y tareas gamificada como un RPG: cada misión da XP y hace progresar a tu personaje. Pensada local-first, con sincronización opcional e IA con tu propia API key, y cuatro skins visuales sobre un mismo sistema de diseño.</p>
+            <p class="stack">React Native · Expo · TypeScript · Supabase</p>
+            <p class="badges"><span class="badge wip" data-i18n="badge.wip">En desarrollo</span><span class="badge priv" data-i18n="badge.private">Código privado</span></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="p-body">
+            <h3 data-i18n="p.nexus.t">El Nexo de Alejo</h3>
+            <p data-i18n="p.nexus">Mi portal personal: blog en Markdown con editor propio, API REST, galería multimedia y un reproductor de música integrado.</p>
+            <p class="stack">Django · Django Ninja · Tailwind</p>
+            <p class="badges"><span class="badge wip" data-i18n="badge.wip">En desarrollo</span><span class="badge priv" data-i18n="badge.private">Código privado</span></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="p-body">
+            <h3>ai-studio</h3>
+            <p data-i18n="p.ai">Un estudio de IA local en mi Mac: modelos de Ollama con roles fijos (arquitecto, crítico, director de arte y guionista) que mis agentes consultan como segunda opinión, sin gastar nube.</p>
+            <p class="stack">Ollama · LM Studio · Python · Claude Code</p>
+            <p class="badges"><span class="badge" data-i18n="badge.2026">2026</span><span class="badge priv" data-i18n="badge.private">Código privado</span></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="p-body">
+            <h3 data-i18n="p.thesis.t">Narrativa emocional · Tesis</h3>
+            <p data-i18n="p.thesis">Prototipo de videojuego narrativo para niños que cambia la historia según las emociones que el sistema detecta en el jugador. Mi tesis de Ingeniería de Sistemas.</p>
+            <p class="stack">2015 – 2016</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TALENT TREES -->
+    <section class="section" id="talents">
+      <h2 class="title" data-i18n="talents.title">Árboles de talento</h2>
+      <p class="sub" data-i18n="talents.sub">Cursos y certificaciones, con su ID de credencial.</p>
+      <div class="trees">
+        <div class="tree arch">
+          <h3>The Architect</h3>
+          <ul>
+            <li><b data-i18n="c.gcp">Introducción a Google Cloud Platform</b><span>Platzi · 2022 · ID 20f80c3a</span></li>
+            <li><b data-i18n="c.aws">Curso AWS Cloud Practitioner</b><span>Platzi · 2025 · ID 5509af64</span></li>
+            <li><b data-i18n="c.td">Transformación Digital para Empresas</b><span>Platzi · 2019 · ID f47677c8</span></li>
+            <li><b data-i18n="c.db">Fundamentos de Bases de Datos</b><span>Platzi · 2018 · ID 1cf8ae2</span></li>
+            <li><b data-i18n="c.fs">Desarrollo Fullstack y tecnologías híbridas</b><span>Fedesoft Colombia · 2018 · ID 1542668447-39</span></li>
+          </ul>
+        </div>
+        <div class="tree inno">
+          <h3>The Innovator</h3>
+          <ul>
+            <li><b data-i18n="c.sdd">Spec Driven Development</b><span>Platzi · 2026 · ID f2366151</span></li>
+            <li><b data-i18n="c.llm">Fundamentos de LLMs</b><span>Platzi · 2025 · ID 2e641cb7</span></li>
+            <li><b data-i18n="c.ia">Introducción a la Inteligencia Artificial</b><span>Platzi · 2025 · ID 6038b694</span></li>
+            <li><b data-i18n="c.agent">Súper Agente de Innovación</b><span>La CoCreadora · 2020</span></li>
+            <li><b data-i18n="c.dt">Design Thinking con Minds Garage</b><span>Platzi · 2019 · ID 30f4776c</span></li>
+            <li><b data-i18n="c.sus">Taller Laboratorio de Sostenibilidad</b><span>Pontificia Universidad Javeriana · 2019</span></li>
+          </ul>
+        </div>
+        <div class="tree crea">
+          <h3>The Creator</h3>
+          <ul>
+            <li><b data-i18n="c.rpg">Curso Avanzado de creación de RPGs con Unity</b><span>Platzi · 2020 · ID bdb44a38</span></li>
+            <li><b data-i18n="c.ue">Desarrollo de Videojuegos con Unreal Engine</b><span>Platzi · 2021 · ID 6e64086a</span></li>
+            <li><b data-i18n="c.unity">Programación de Videojuegos con Unity</b><span>Platzi · 2018 · ID e38bd8fc</span></li>
+            <li><b data-i18n="c.vg">Creación de videojuegos</b><span>Platzi · 2018 · ID f632ba6a</span></li>
+            <li><b data-i18n="c.pr">Adobe Premiere Pro básico</b><span>Platzi · 2021 · ID 470704d2</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="section" id="content">
+      <h2 class="title" data-i18n="content.title">Contenido</h2>
+      <p class="sub" data-i18n="content.sub">Donde hablo de videojuegos, anime y lo que voy construyendo.</p>
+      <div class="content">
+        <video class="short" controls preload="none" playsinline poster="assets/video/gamers-cuts-short-poster.jpg" aria-label="Gamer's Cuts Short intro">
+          <source src="assets/video/gamers-cuts-short-720.mp4" type="video/mp4" />
+        </video>
+        <div class="channels">
+          <a class="channel" data-link="gamersCuts"><h3>Gamer's Cuts</h3><p data-i18n="ch.gc">El “director's cut” de la historia y el diseño de videojuegos.</p></a>
+          <a class="channel" data-link="mangaShow"><h3>Manga Show in Otaku Mode</h3><p data-i18n="ch.ms">Los animes de la temporada y un clásico del pasado.</p></a>
+          <a class="channel" data-link="reboot"><h3>Reboot</h3><p data-i18n="ch.rb">Vlog: lo que estoy aprendiendo y construyendo.</p></a>
+          <a class="channel" data-link="twitch"><h3>Twitch</h3><p data-i18n="ch.tw">Streams en vivo.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2 class="title" data-i18n="contact.title">Invocar a Alejo</h2>
+      <p class="sub" data-i18n="contact.sub">¿Tienes una misión épica o necesitas un aliado para tu party? Escríbeme.</p>
+      <div class="contact-row">
+        <a class="btn primary" id="mail" href="#contact" data-i18n="contact.write">Escribir un correo</a>
+        <button class="btn" id="copy" type="button" data-i18n="contact.copy">Copiar correo</button>
+        <a class="btn" href="https://www.linkedin.com/in/alejandro-jauregui-salamanca/" rel="me noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/AlejoJauregui" rel="me noopener">GitHub</a>
+        <a class="btn" data-link="x">X</a>
+      </div>
+      <p class="copied" id="copied" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="yorick" href="#top" aria-label="Volver arriba">
+      <img class="y-closed" src="assets/img/yorick-hd-closed.png" alt="" width="72" height="72" />
+      <img class="y-open" src="assets/img/yorick-hd-open.png" alt="" width="72" height="72" />
+    </a>
+    <p data-i18n="footer">© 2026 Alejo Jáuregui · Forjado en el código. Yorick te lleva arriba.</p>
+  </footer>
+
+  <script src="assets/js/links.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
